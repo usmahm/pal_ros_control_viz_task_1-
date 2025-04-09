@@ -1,5 +1,8 @@
 # ROS 2 Control Ecosystem Visualization - Task 1: ROS 2 Sensor Controller
 
+[Screencast from 08-04-2025 16_59_28.webm](https://github.com/user-attachments/assets/1155ca00-02c5-4ec9-864b-88d1f8faf61b)
+
+
 This repository contains a ROS 2-based system designed as part of a GSoC qualification task. The system demonstrates the following functionalities:
 1. A publisher node that generates integer sensor data.
 2. A client node that subscribes to the sensor data and conditionally sends service requests.
@@ -12,6 +15,8 @@ This README provides instructions to set up, build, and run the system, along wi
 ## How It Works
 
 The system is implemented in both C++ and Python to showcase versatility. The key components are:
+
+![control-viz-1 drawio](https://github.com/user-attachments/assets/bc22f4da-ac05-420c-8fb7-5d55569eebb3)
 
 ### Publisher Nodes (`data_publisher.cpp` / `data_publisher.py`)
 - Publish an integer message to the `sensor_data` topic at a fixed rate, every 2 seconds.
