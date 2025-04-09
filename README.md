@@ -5,16 +5,25 @@ This repository contains a ROS 2-based system designed as part of a GSoC qualifi
 2. A client node that subscribes to the sensor data and conditionally sends service requests.
 3. A server node that processes the service requests.
 
-This README provides instructions to set up, build, and run the system, along with an explanation of the approach taken to solve the task.
+This README provides instructions to set up, build, and run the system, along with an explanation of how it works.
 
 ---
 
-## Approach to the Solution
+## How It Works
 
 The system is implemented in both C++ and Python to showcase versatility. The key components are:
-- **Publisher Node**: Publishes integer data on a topic (`sensor_data`).
-- **Client Node**: Subscribes to the topic and sends service requests based on the data (e.g., even/odd logic).
-- **Server Node**: Responds to the service requests and logs the results.
+
+### Publisher Nodes (`data_publisher.cpp` / `data_publisher.py`)
+- Publish an integer message to the `sensor_data` topic at a fixed rate, every 2 seconds.
+
+### Service Server Nodes (`sensor_controller_server.cpp` / `sensor_controller_server.py`)
+- Advertise a service (`command_service`) that accepts a boolean request.
+- On receiving a request, log the value and respond with `success=true`.
+
+### Client Nodes (`sensor_controller_client.cpp` / `sensor_controller_client.py`)
+- Subscribe to the `sensor_data` topic.
+- If the incoming message is even (or satisfies a certain condition), send `true` to the service. Otherwise, send `false`.
+- Optionally subscribe to the `custom_data` topic (via `interfaces/msg/CustomMessage`) to demonstrate how custom messages can be integrated.
 
 ---
 
