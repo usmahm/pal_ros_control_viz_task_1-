@@ -3,7 +3,7 @@
 [Screencast from 08-04-2025 16_59_28.webm](https://github.com/user-attachments/assets/1155ca00-02c5-4ec9-864b-88d1f8faf61b)
 
 
-This repository contains a ROS 2-based system designed as part of a GSoC qualification task. The system demonstrates the following functionalities:
+This repository contains a ROS 2-based system designed for PAL Robotics GSoC qualification task. The system demonstrates the following functionalities:
 1. A publisher node that generates integer sensor data.
 2. A client node that subscribes to the sensor data and conditionally sends service requests.
 3. A server node that processes the service requests.
