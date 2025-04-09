@@ -1,4 +1,4 @@
-# ROS 2 Control Ecosystem Visualization - Task 1: ROS 2 Sensor Controller
+# PAL Control Ecosystem Visualization - Task 1: ROS 2 Sensor Controller
 
 [Screencast from 08-04-2025 16_59_28.webm](https://github.com/user-attachments/assets/1155ca00-02c5-4ec9-864b-88d1f8faf61b)
 
