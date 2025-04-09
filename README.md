@@ -1,4 +1,4 @@
-# ROS 2 Sensor Controller (Task 1)
+# ROS 2 Control Ecosystem Visualization - Task 1: ROS 2 Sensor Controller
 
 This repository contains a ROS 2-based system designed as part of a GSoC qualification task. The system demonstrates the following functionalities:
 1. A publisher node that generates integer sensor data.
